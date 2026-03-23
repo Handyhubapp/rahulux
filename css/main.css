@@ -269,3 +269,51 @@ footer a:not(.nav-link) {
 .entry-title a {
   text-decoration: none;
 }
+ .skills-matrix {
+    max-width: 700px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 8px;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  .skills-matrix h1 {
+    font-size: 2.5rem;
+    border-bottom: 3px solid #007acc;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1.5rem;
+  }
+  .skills-matrix h2 {
+    font-size: 1.75rem;
+    color: #007acc;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+  }
+  .skills-matrix h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+    color: #444;
+  }
+  .skills-list {
+    margin: 0 0 1.5rem 0;
+    padding-left: 1rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  @media (max-width: 600px) {
+    body {
+      margin: 1rem;
+    }
+    .skills-matrix {
+      padding: 1.5rem 1.5rem;
+    }
+    .skills-matrix h1 {
+      font-size: 2rem;
+    }
+    .skills-matrix h2 {
+      font-size: 1.5rem;
+    }
+    .skills-matrix h3 {
+      font-size: 1.1rem;
+    }
