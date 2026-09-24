@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      ".firebaserc",
+      "AGENTS.md",
+      "scripts/publish-changes.ps1",
+      "README.txt",
+      "LICENSE-free.txt",
+      "New folder/**",
+      ".git/**",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
