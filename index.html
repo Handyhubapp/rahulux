@@ -43,13 +43,30 @@
         color: #38d2ff !important;
       }
 
-      .rx-nav .nav-link.rx-linkedin-mobile {
+      .rx-nav .nav-link.rx-linkedin-mobile-header {
+        display: inline-flex;
+        flex: 0 0 38px;
+        align-items: center;
+        justify-content: center;
+        width: 38px;
+        height: 38px;
+        margin-right: 0.25rem;
+        padding: 0 !important;
+        border: 1px solid rgba(92, 191, 255, 0.3);
+        border-radius: 10px;
         color: #39d7ff !important;
+        font-size: 17px;
       }
 
       @media (max-width: 991.98px) {
         .rx-nav .nav-link.rx-linkedin-top {
           margin: 0.5rem 0.6rem 0 0;
+        }
+      }
+
+      @media (max-width: 575.98px) {
+        .rx-nav .navbar-brand {
+          margin-right: 0.5rem;
         }
       }
 
@@ -88,6 +105,14 @@
             </svg>
             <span>RAHUL<small>UX PORTFOLIO</small></span></a
           >
+          <a
+            class="nav-link rx-linkedin-mobile-header d-lg-none"
+            href="https://www.linkedin.com/in/rahul-bheemanathi-54611b137/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            title="LinkedIn"
+          ><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a>
           <button
             class="navbar-toggler"
             type="button"
@@ -118,16 +143,6 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
-              </li>
-              <li class="nav-item d-lg-none">
-                <a
-                  class="nav-link rx-linkedin-mobile"
-                  href="https://www.linkedin.com/in/rahul-bheemanathi-54611b137/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="LinkedIn"
-                  title="LinkedIn"
-                ><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a>
               </li>
             </ul>
             <a
