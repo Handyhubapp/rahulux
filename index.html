@@ -1,190 +1,409 @@
-<!DOCTYPE html>
-<!-- upto 2 directory depth-->
+<!doctype html>
 <html lang="en-US">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Rahul UX</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap" media="print" onload="this.media='all'"/>
-    <noscript>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap"/>
-    </noscript>
-    <link href="./css/font-awesome/css/all.min.css?ver=1.2.0" rel="stylesheet">
-    <link href="./css/bootstrap-icons/bootstrap-icons.css?ver=1.2.0" rel="stylesheet">
-    <link href="./css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
-    <link href="./css/aos.css?ver=1.2.0" rel="stylesheet">
-    <link href="./css/main.css?ver=1.2.0" rel="stylesheet">
-    <noscript>
-      <style type="text/css">
-        [data-aos] {
-            opacity: 1 !important;
-            transform: translate(0) scale(1) !important;
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="./css/font-awesome/css/all.min.css?ver=1.2.0"
+      rel="stylesheet"
+    />
+    <link
+      href="./css/bootstrap-icons/bootstrap-icons.css?ver=1.2.0"
+      rel="stylesheet"
+    />
+    <link href="./css/bootstrap.min.css?ver=1.2.0" rel="stylesheet" />
+    <link href="./css/aos.css?ver=1.2.0" rel="stylesheet" />
+    <link href="./css/main.css?ver=1.2.0" rel="stylesheet" />
+    <link href="./css/portfolio.css" rel="stylesheet" />
+    <style>
+      .rx-nav .nav-link.rx-linkedin-top {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 38px;
+        height: 38px;
+        margin: 0 0.35rem 0 0.15rem;
+        padding: 0 !important;
+        border: 1px solid rgba(92, 191, 255, 0.3);
+        border-radius: 10px;
+        color: #d7e1ef !important;
+        font-size: 17px;
+      }
+
+      .rx-nav .nav-link.rx-linkedin-top:hover,
+      .rx-nav .nav-link.rx-linkedin-top:focus-visible {
+        border-color: rgba(56, 210, 255, 0.65);
+        color: #38d2ff !important;
+      }
+
+      @media (max-width: 991.98px) {
+        .rx-nav .nav-link.rx-linkedin-top {
+          margin: 0.5rem 0.6rem 0 0;
         }
-      </style>
-    </noscript>
+      }
+    </style>
   </head>
-  <body id="top">
-    <header class="bg-light">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light" id="header-nav" role="navigation">
-        <div class="container"><a class="link-dark navbar-brand site-title mb-0" href="#">Rahul UX</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+  <body id="top" class="rx-site">
+    <!-- Header / Navigation -->
+    <header class="rx-nav">
+      <nav
+        class="navbar navbar-expand-lg navbar-dark"
+        id="header-nav"
+        role="navigation"
+      >
+        <div class="container py-1">
+          <a
+            class="navbar-brand rx-brand"
+            href="#top"
+            aria-label="Rahul UX home"
+          >
+            <svg class="rx-logo" viewBox="0 0 100 100" aria-hidden="true">
+              <defs>
+                <linearGradient id="rxg" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#20d8ff" />
+                  <stop offset=".55" stop-color="#2d91ff" />
+                  <stop offset="1" stop-color="#8c4fff" />
+                </linearGradient>
+              </defs>
+              <path
+                fill="url(#rxg)"
+                d="M15 13h37c20 0 31 10 31 25 0 12-7 20-18 24l21 25H68L49 66H36v21H15V13zm21 17v20h14c8 0 13-4 13-10s-5-10-13-10H36z"
+              />
+              <path fill="#39d7ff" d="M15 13h21v8H15z" />
+            </svg>
+            <span>RAHUL<small>UX PORTFOLIO</small></span></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto me-2">
-              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-              <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-              <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-              <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-              <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            <ul class="navbar-nav ms-auto align-items-lg-center me-lg-2">
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#experience">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
             </ul>
+            <a
+              class="nav-link rx-linkedin-top"
+              href="https://www.linkedin.com/in/rahul-bheemanathi-54611b137/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn profile"
+              title="LinkedIn"
+            ><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a>
+            <a class="nav-link rx-connect" href="#contact"
+              >Let’s Connect <i class="fas fa-arrow-right ms-1"></i
+            ></a>
           </div>
         </div>
       </nav>
     </header>
-    <div class="page-content">
-      <div id="content">
-<header>
-  <div class="cover bg-light">
-    <div class="container px-3">
-      <div class="row">
-        <div class="col-lg-6 p-2"><img class="img-fluid" src="images/illustrations/hello3.svg" alt="hello"/></div>
-        <div class="col-lg-6">
-          <div class="mt-5">
-            <p class="lead text-uppercase mb-1">Hello!</p>
-            <h1 class="intro-title marker" data-aos="fade-left" data-aos-delay="50">I’m Rahul Bheemanathi</h1>
-            <p class="lead fw-normal mt-3" data-aos="fade-up" data-aos-delay="100">UI / UX Designer & Developer, Front-end Experienced</p>
-            <div class="social-nav" data-aos="fade-up" data-aos-delay="200">
-              <nav role="navigation">
-                <ul class="nav justify-content-left">
-                  <!-- <li class="nav-item"><a class="nav-link" href="https://twitter.com/templateflip" title="Twitter"><i class="fab fa-twitter"></i><span class="menu-title sr-only">Twitter</span></a></li> -->
-                  <!-- <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/templateflip" title="Facebook"><i class="fab fa-facebook"></i><span class="menu-title sr-only">Facebook</span></a></li> -->
-                  <!-- <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/templateflip" title="Instagram"><i class="fab fa-instagram"></i><span class="menu-title sr-only">Instagram</span></a></li> -->
-                  <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/rahul-bheemanathi-54611b137/" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i><span class="menu-title sr-only">LinkedIn</span></a></li>
-                  <!-- <li class="nav-item"><a class="nav-link" href="https://www.behance.net/templateflip" title="Behance"><i class="fab fa-behance"></i><span class="menu-title sr-only">Behance</span></a></li> -->
-                </ul>
-              </nav>
+    <main>
+      <!-- Hero Section -->
+      <section class="rx-hero">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-7">
+              <div class="rx-eyebrow">
+                UI / UX Designer &amp; Developer · Front-end Experienced
+              </div>
+              <h1 class="rx-title">
+                Designing <span class="gradient">Meaningful</span><br />Digital
+                Experiences
+              </h1>
+              <p class="rx-lead">
+                UI / UX Designer &amp; Developer, Front-end Experienced
+              </p>
+              <p class="rx-copy">
+                16+ Years of Experience in UX/UI Design, Front-End Development
+                and Enterprise Applications.
+              </p>
+              <div class="rx-actions">
+                <a class="rx-btn rx-btn-primary" href="#portfolio"
+                  >View My Work <i class="fas fa-arrow-right"></i></a
+                ><a class="rx-btn rx-btn-outline" href="#contact"
+                  >Get In Touch <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
             </div>
-            <div class="mt-3" data-aos="fade-up" data-aos-delay="200"><a class="btn btn-primary shadow-sm mt-1 hover-effect" href="#contact">Get In Touch <i class="fas fa-arrow-right"></i></a></div>
+            <div class="col-lg-5 rx-hero-r">
+              <svg
+                class="rx-rmark"
+                viewBox="0 0 500 500"
+                aria-label="R personal brand logo"
+                role="img"
+              >
+                <defs>
+                  <linearGradient id="heroR" x1="0" y1="1" x2="1" y2="0">
+                    <stop offset="0" stop-color="#13c9ff" />
+                    <stop offset=".52" stop-color="#3b8dff" />
+                    <stop offset="1" stop-color="#a34dff" />
+                  </linearGradient>
+                  <filter id="glow">
+                    <feGaussianBlur stdDeviation="10" result="b" />
+                    <feMerge>
+                      <feMergeNode in="b" />
+                      <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                  </filter>
+                </defs>
+                <path
+                  filter="url(#glow)"
+                  fill="url(#heroR)"
+                  d="M88 62h188c86 0 135 45 135 112 0 54-30 89-79 106l92 122h-94l-79-109h-72v109H88V62zm91 73v86h94c31 0 49-16 49-43 0-27-18-43-49-43h-94z"
+                />
+                <path fill="#24d6ff" d="M88 62h91v29H88z" />
+              </svg>
+              <div class="rx-years">
+                <strong>16+</strong><span>Years of<br />Experience</span>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="wave-bg"></div>
-</header>
-<div class="section pt-4 px-3 px-lg-4" id="about">
-  <div class="container-narrow">
-    <div class="row">
-      <div class="col-md-6">
-        <h2 class="h4 my-2">Hello! I’m Rahul Bheemanathi.</h2>
-        <p>I'm a UI/UX Designer and Front-End Developer with 16+ years of experience designing and developing user-centered interfaces for enterprise applications and complex business workflows.</p>
-        <p>I specialize in wireframing, prototyping, responsive UI, design systems, reusable components, accessibility, and translating complex requirements into clear user experiences. I collaborate closely with product owners and developers throughout design, implementation, testing, and delivery.</p>
-        <div class="row mt-3">
-          <!-- <div class="col-sm-2">
-            <div class="pb-1">Age:</div>
-          </div> -->
-          <!-- <div class="col-sm-10">
-            <div class="pb-1 fw-bolder">28</div>
-          </div> -->
-          <div class="col-sm-2">
-            <div class="pb-1">Email:</div>
-          </div>
-          <div class="col-sm-10">
-            <div class="pb-1 fw-bolder">info@rahulux.com</div>
-          </div>
-          <!-- <div class="col-sm-2">
-            <div class="pb-1">Skype:</div>
-          </div> -->
-          <!-- <div class="col-sm-10">
-            <div class="pb-1 fw-bolder">username@skype.com</div>
-          </div> -->
-          <div class="col-sm-2">
-            <div class="pb-1">Phone:</div>
-          </div>
-          <div class="col-sm-10">
-            <div class="pb-1 fw-bolder">+1 331-203-2709</div>
-          </div>
-          <!-- <div class="col-sm-2">
-            <div class="pb-1">Address:</div>
-          </div>
-          <div class="col-sm-10">
-            <div class="pb-1 fw-bolder">Aurora, IL</div>
-          </div> -->
-          <div class="col-sm-2">
-            <div class="pb-1">Staus:</div>
-          </div>
-          <div class="col-sm-10">
-            <div class="pb-1 fw-bolder">Available</div>
+      </section>
+      <!-- Featured Section -->
+      <section class="rx-featurebar">
+        <div class="container">
+          <div class="row g-0">
+            <div class="col-6 col-lg rx-feature">
+              <i class="fas fa-medal"></i>
+              <div><strong>16+ Years</strong><span>Experience</span></div>
+            </div>
+            <div class="col-6 col-lg rx-feature">
+              <i class="fas fa-layer-group"></i>
+              <div><strong>Enterprise</strong><span>Applications</span></div>
+            </div>
+            <div class="col-6 col-lg rx-feature">
+              <i class="fas fa-desktop"></i>
+              <div>
+                <strong>Design Systems</strong><span>&amp; Reusable UI</span>
+              </div>
+            </div>
+            <div class="col-6 col-lg rx-feature">
+              <i class="fas fa-users"></i>
+              <div><strong>User-Centered</strong><span>Solutions</span></div>
+            </div>
+            <div class="col-12 col-lg rx-feature">
+              <i class="fas fa-code"></i>
+              <div>
+                <strong>Design to Code</strong><span>Implementation</span>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-5 offset-md-1" data-aos="fade-left" data-aos-delay="100"><img class="avatar img-fluid mt-2" src="images/Rahul Profile.jpg" width="400" height="400" alt="Walter Patterson"/></div>
-    </div>
-  </div>
-</div>
-<div class="section px-3 px-lg-4 pt-5" id="services">
-  <div class="container-narrow">
-    <div class="text-center mb-5">
-      <h2 class="marker marker-center">My Services</h2>
-    </div>
-    <div class="text-center">
-      <p class="mx-auto mb-3" style="max-width:600px"> I offer services fit for any website or app. I can quickly maximize timely deliverables for real-time schemas.</p>
-    </div>
-    <div class="row py-3">
-      <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="100"><img class="mb-2" src="images/services/web-design.svg" width="96" height="96" alt="web design"/>
-        <div class="h5">Web Design</div>
-      </div>
-      <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="200"><img class="mb-2" src="images/services/graphic-design.svg" width="96" height="96" alt="graphic design"/>
-        <div class="h5">Graphic Design</div>
-      </div>
-      <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="300"><img class="mb-2" src="images/services/ui-ux.svg" width="96" height="96" alt="ui-ux"/>
-        <div class="h5">UI/UX</div>
-      </div>
-      <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="400"><img class="mb-2" src="images/services/app-development.svg" width="96" height="96" alt="app development"/>
-        <div class="h5">App Development</div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="section px-3 px-lg-4 pt-5" id="skills">
-  <div class="container-narrow">
-    <div class="text-center mb-5">
-      <h2 class="marker marker-center">My Skills</h2>
-    </div>
-  <section class="skills-matrix">
-    <h1>Skills Matrix</h1>
-    <h2>CORE SKILLS</h2>
-
-    <div class="skill-category">
-      <h3>UI/UX &amp; Design:</h3>
-      <p class="skills-list">UI/UX Design, Wireframes, Prototyping, Design Systems, Reusable Components, Accessibility, WCAG 2.1 AA</p>
-    </div>
-
-    <div class="skill-category">
-      <h3>Front-End Development:</h3>
-      <p class="skills-list">HTML5, CSS3, JavaScript, Bootstrap, Responsive UI</p>
-    </div>
-
-    <div class="skill-category">
-      <h3>Backend Integration:</h3>
-      <p class="skills-list">ASP.NET MVC, Razor</p>
-    </div>
-
-    <div class="skill-category">
-      <h3>Tools &amp; Platforms:</h3>
-      <p class="skills-list">Figma, Git, GitHub, Azure DevOps</p>
-    </div>
-
-    <div class="skill-category">
-      <h3>Other Skills:</h3>
-      <p class="skills-list">Agile / Scrum</p>
-    </div>
-  </section>
-  </div>
-</div> 
+      </section>
+      <!-- About Section -->
+      <section class="rx-section" id="about">
+        <div class="container">
+          <div class="rx-section-head">
+            <div class="rx-kicker">About</div>
+            <h2 class="rx-section-title">Hello! I’m Rahul Bheemanathi.</h2>
+          </div>
+          <div class="rx-about-card">
+            <div class="row">
+              <div class="col-lg-8">
+                <p>
+                  I'm a UI/UX Designer and Front-End Developer with
+                  <span class="rx-years-inline">16+ years</span> of experience
+                  designing and developing user-centered
+                  interfaces for enterprise applications and complex business
+                  workflows.
+                </p>
+                <p>
+                  I specialize in wireframing, prototyping, responsive UI,
+                  design systems, reusable components, accessibility, and
+                  translating complex requirements into clear user
+                  experiences. I collaborate closely with product owners and
+                  developers throughout design, implementation, testing, and
+                  delivery.
+                </p>
+              </div>
+              <div class="col-lg-4">
+                <div class="rx-contact-meta">
+                  <div class="mb-3">
+                    <small class="text-muted d-block">Email</small
+                    ><strong>info@rahulux.com</strong>
+                  </div>
+                  <div class="mb-3">
+                    <small class="text-muted d-block">Phone</small
+                    ><strong>331-980-0775</strong>
+                  </div>
+                  <div>
+                    <small class="text-muted d-block">Staus</small
+                    ><strong>Available</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Services Section -->
+      <section class="rx-section rx-services" id="services">
+        <div class="container">
+          <div class="rx-section-head">
+            <div class="rx-kicker">Services</div>
+            <h2 class="rx-section-title">My Services</h2>
+            <p class="rx-section-copy">
+              I offer services fit for any website or app. I can quickly
+              maximize timely deliverables for real-time schemas.
+            </p>
+          </div>
+          <div class="row g-4">
+            <div class="col-6 col-lg-3">
+              <div class="rx-service-card">
+                <img src="images/services/web-design.svg" alt="web design" />
+                <h3>Web Design</h3>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="rx-service-card">
+                <img
+                  src="images/services/graphic-design.svg"
+                  alt="graphic design"
+                />
+                <h3>Graphic Design</h3>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="rx-service-card">
+                <img src="images/services/ui-ux.svg" alt="ui-ux" />
+                <h3>UI/UX</h3>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="rx-service-card">
+                <img
+                  src="images/services/app-development.svg"
+                  alt="app development"
+                />
+                <h3>App Development</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Skills Section -->
+      <section class="rx-section" id="skills">
+        <div class="container">
+          <div class="rx-skills-wrap">
+            <div class="rx-section-head">
+              <div class="rx-kicker">My Skills</div>
+              <h2 class="rx-section-title">Skills Matrix</h2>
+              <p class="rx-section-copy">CORE SKILLS</p>
+            </div>
+            <div class="row g-3">
+              <div class="col-lg-6">
+                <div class="rx-skill-card">
+                  <h3>UI/UX &amp; Design:</h3>
+                  <p>
+                    UI/UX Design, Wireframes, Prototyping, Design Systems,
+                    Reusable Components, Accessibility, WCAG 2.1 AA
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="rx-skill-card">
+                  <h3>Front-End Development:</h3>
+                  <p>
+                    HTML5, CSS3, JavaScript, Bootstrap, Responsive UI
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="rx-skill-card">
+                  <h3>Backend Integration:</h3>
+                  <p>
+                    ASP.NET MVC, Razor
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="rx-skill-card">
+                  <h3>Tools &amp; Platforms:</h3>
+                  <p>
+                    Figma, Git, GitHub, Azure DevOps
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="rx-skill-card">
+                  <h3>Other Skills:</h3>
+                  <p>
+                    Agile / Scrum
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="rx-section rx-certifications" id="certifications">
+        <div class="container">
+          <div class="rx-section-head">
+            <div class="rx-kicker">Credentials</div>
+            <h2 class="rx-section-title">Certifications &amp; Credentials</h2>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <article class="rx-cert-card">
+                <div class="rx-cert-provider">Udemy</div>
+                <h3>UI/UX Web Design in Figma 2026 | AI &amp; Big Projects</h3>
+                <p><strong>Date:</strong> September 2026</p>
+                <p><strong>Instructor:</strong> Dmitrii Fokeev</p>
+                <a class="rx-cert-link" href="https://ude.my/UC-cd5bf12a-3195-4ef3-8029-d4a79f53ec36" target="_blank" rel="noopener noreferrer">View Credential &rarr;</a>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="rx-cert-card">
+                <div class="rx-cert-provider">Udemy</div>
+                <h3>Figma UI UX Design Advanced</h3>
+                <p><strong>Date:</strong> September 2026</p>
+                <p><strong>Instructor:</strong> Daniel Walter Scott</p>
+                <a class="rx-cert-link" href="https://ude.my/UC-17339684-4365-406b-be08-d0c3647c0247" target="_blank" rel="noopener noreferrer">View Credential &rarr;</a>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="rx-cert-card">
+                <div class="rx-cert-provider">Udemy</div>
+                <h3>Intro to AI Agents and Agentic AI</h3>
+                <p><strong>Date:</strong> September 29, 2026</p>
+                <p><strong>Instructor:</strong> 365 Careers</p>
+                <a class="rx-cert-link" href="https://ude.my/UC-4b52f81e-5d47-44b8-b875-abee745c25c9" target="_blank" rel="noopener noreferrer">View Credential &rarr;</a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
 <div class="section px-2 px-lg-4 pt-3 pb-3" id="delivery">
   <div class="container">
     <div class="text-center mb-4">
@@ -235,259 +454,425 @@
     </ol>
   </div>
 </div>
-<div class="section px-2 px-lg-4 pt-5" id="portfolio">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="marker marker-center">Portfolio </h2>
-    </div>
-    <div class="grid bp-gallery pb-3" data-aos="zoom-in-up" data-aos-delay="100">
-      <div class="grid-sizer"></div>
-      <div class="grid-item">
-          <figure class="portfolio-item"><img src="images/portfolio/rays.jpg"/>
-            <figcaption>
-              <h4 class="h5 mb-0">Web Design</h4>
-              <div><p><a href="http://raysautoserviceinc.com/" target="_blank" rel="noopener noreferrer">Rays Auto Service Inc</a></p></div>
-            </figcaption>
-          </figure></a></div>
-          <div class="grid-item">
-            <figure class="portfolio-item"><img src="images/portfolio/cafe.jpg"/>
-              <figcaption>
-                <h4 class="h5 mb-0">Web Design</h4>
-                <div><p><a href="https://cafedeoro-rw.com/" target="_blank" rel="noopener noreferrer">Cafedeoro</a></p></div>
-              </figcaption>
-            </figure></a></div>
-              <div class="grid-item">
-                <figure class="portfolio-item"><img src="images/portfolio/777Car.jpg"/>
-                  <figcaption>
-                    <h4 class="h5 mb-0">Web Design</h4>
-                    <div><p><a href="http://777premiumhandcarwash.com/" target="_blank" rel="noopener noreferrer">777premiumhandcarwash</a></p></div>
-                  </figcaption>
-                </figure></a></div>
-                <div class="grid-item">
-                  <figure class="portfolio-item"><img src="images/portfolio/volo.jpg"/>
-                    <figcaption>
-                      <h4 class="h5 mb-0">Web Design</h4>
-                      <div><p><a href="https://volio.net/" target="_blank" rel="noopener noreferrer">volio</a></p></div>
-                    </figcaption>
-                  </figure></a></div>
-                  <div class="grid-item">
-                    <figure class="portfolio-item"><img src="images/portfolio/orient.jpg"/>
-                      <figcaption>
-                        <h4 class="h5 mb-0">Web Design</h4>
-                        <div><p><a href="https://www.orientspectra.com/" target="_blank" rel="noopener noreferrer">Orientspectra</a></p></div>
-                      </figcaption>
-                    </figure></a></div>
-    </div>
-  </div>
-</div>
-<div class="section px-3 px-lg-4 pt-5" id="experience">
-  <div class="container-narrow">
-    <div class="text-center mb-5">
-      <h2 class="marker marker-center">Experience</h2>
-    </div>
-    <div class="row">
-      <div class="col-md-6">
-        <div class="card mb-3" data-aos="fade-right" data-aos-delay="100">
-          <div class="card-header px-3 py-2">
-            <div class="d-flex justify-content-between">
-              <div>
-                <h3 class="h5 mb-1">UI/UX Developer & Designer Consultant</h3>
-                <div class="text-muted text-small">INSURANCE AUTO AUCTIONS, Chicago, IL <small>(Oct 2018 – Present)</small></div>
+      <!-- Portfolio Section -->
+      <section class="rx-section rx-portfolio" id="portfolio">
+        <div class="container">
+          <div
+            class="rx-section-head d-flex align-items-end justify-content-between flex-wrap gap-3"
+          >
+            <div>
+              <div class="rx-kicker">Featured Work</div>
+              <h2 class="rx-section-title">Portfolio</h2>
+            </div>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <a
+                class="text-decoration-none"
+                href="http://raysautoserviceinc.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><div class="rx-project">
+                  <div class="rx-project-img">
+                    <img
+                      src="images/portfolio/rays.jpg"
+                      alt="Rays Auto Service Inc"
+                    />
+                  </div>
+                  <div class="rx-project-body">
+                    <span class="rx-project-arrow"
+                      ><i class="fas fa-arrow-right"></i
+                    ></span>
+                    <h3>Rays Auto Service Inc</h3>
+                    <p>Web Design</p>
+                  </div>
+                </div></a
+              >
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <a
+                class="text-decoration-none"
+                href="https://cafedeoro-rw.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><div class="rx-project">
+                  <div class="rx-project-img">
+                    <img src="images/portfolio/cafe.jpg" alt="Cafedeoro" />
+                    <div></div>
+                  </div>
+                  <div class="rx-project-body">
+                    <span class="rx-project-arrow"
+                      ><i class="fas fa-arrow-right"></i
+                    ></span>
+                    <h3>Cafedeoro</h3>
+                    <p>Web Design</p>
+                  </div>
+                </div></a
+              >
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <a
+                class="text-decoration-none"
+                href="http://777premiumhandcarwash.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><div class="rx-project">
+                  <div class="rx-project-img">
+                    <img
+                      src="images/portfolio/777Car.jpg"
+                      alt="777premiumhandcarwash"
+                    />
+                  </div>
+                  <div class="rx-project-body">
+                    <span class="rx-project-arrow"
+                      ><i class="fas fa-arrow-right"></i
+                    ></span>
+                    <h3>777premiumhandcarwash</h3>
+                    <p>Web Design</p>
+                  </div>
+                </div></a
+              >
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <a
+                class="text-decoration-none"
+                href="https://volio.net/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><div class="rx-project">
+                  <div class="rx-project-img">
+                    <img src="images/portfolio/volo.jpg" alt="volio" />
+                  </div>
+                  <div class="rx-project-body">
+                    <span class="rx-project-arrow"
+                      ><i class="fas fa-arrow-right"></i
+                    ></span>
+                    <h3>volio</h3>
+                    <p>Web Design</p>
+                  </div>
+                </div></a
+              >
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <a
+                class="text-decoration-none"
+                href="https://www.orientspectra.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><div class="rx-project">
+                  <div class="rx-project-img">
+                    <img
+                      src="images/portfolio/orient.jpg"
+                      alt="Orientspectra"
+                    />
+                  </div>
+                  <div class="rx-project-body">
+                    <span class="rx-project-arrow"
+                      ><i class="fas fa-arrow-right"></i
+                    ></span>
+                    <h3>Orientspectra</h3>
+                    <p>Web Design</p>
+                  </div>
+                </div></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Experience Section -->
+      <section class="rx-section rx-experience" id="experience">
+        <div class="container">
+          <div class="rx-section-head">
+            <div class="rx-kicker">Experience</div>
+            <h2 class="rx-section-title">Professional Journey</h2>
+          </div>
+          <div class="rx-timeline">
+            <div class="rx-exp-item">
+              <div class="rx-exp-date">Oct 2018 – Present</div>
+              <div class="rx-exp-card">
+                <h3>UI/UX Developer &amp; Designer Consultant</h3>
+                <div class="rx-company">
+                  INSURANCE AUTO AUCTIONS, Chicago, IL
+                </div>
+                <p>
+                  I developed front-end experiences for IAA's enterprise
+                  operations application, supporting complex, data-dense
+                  workflows across forms, tables, dashboards, and multi-step
+                  processes. Using HTML5, CSS3, JavaScript, and jQuery, I built
+                  responsive interfaces and reusable UI components within a
+                  shared design system.
+                </p>
+                <p>
+                  I modernized legacy ASP.NET .aspx pages into .cshtml using
+                  current Bootstrap versions, and collaborated with .NET
+                  developers on data binding and UI defects. I applied
+                  accessibility practices with WCAG 2.1 AA as a target and
+                  supported delivery through Azure DevOps.
+                </p>
+              </div>
+            </div>
+            <div class="rx-exp-item">
+              <div class="rx-exp-date">Jun 2018 – Oct 2018</div>
+              <div class="rx-exp-card">
+                <h3>UX/UI Designer &amp; Developer Consultant, Microsoft 365 Compliance</h3>
+                <div class="rx-company">Microsoft Corporation (contract), Redmond, WA</div>
+                <p>
+                  Designed the Microsoft 365 Compliance labeling and
+                  classification experience for classifying content for
+                  governance and enforcing retention rules. Designed the
+                  experience end to end, from navigation flows, site maps, UI
+                  sketches, and wireframes through low-fidelity mockups and
+                  high-fidelity interactive prototypes, and wrote the interface
+                  and functional specifications engineering built from.
+                </p>
+                <p>
+                  Presented design strategy and concepts at UX reviews with
+                  senior management and iterated prototypes weekly based on
+                  review feedback. Built web forms and UI components in HTML,
+                  CSS, and JavaScript in the team's Git repository, and wrote
+                  PowerShell to extract tenant configuration and labeling data
+                  for compliance reporting and analysis.
+                </p>
+              </div>
+            </div>
+            <div class="rx-exp-item">
+              <div class="rx-exp-date">Jan 2018 – May 2018</div>
+              <div class="rx-exp-card">
+                <h3>UI/UX Designer Consultant</h3>
+                <div class="rx-company">Delicia (startup, contract), San Antonio, TX</div>
+                <p>
+                  Owned the end-to-end web and mobile product design for an
+                  early-stage food distribution network with a blockchain-based
+                  back end: information architecture, user journeys, interactive
+                  Axure mockups, and high-fidelity desktop and mobile designs.
+                  Worked directly with the founder and a single back-end
+                  developer on a two-to-three-times-weekly review cycle.
+                </p>
+                <p>
+                  Designed distinct desktop and mobile layouts where content
+                  needed to be reorganized, prioritized, or hidden at smaller
+                  sizes. Built interactive HTML prototypes in HTML5, CSS3,
+                  Bootstrap, JavaScript, and jQuery for investor and client
+                  presentations, and created the brand identity, logo, icon set,
+                  and a reusable UI component set.
+                </p>
+              </div>
+            </div>
+            <div class="rx-exp-item">
+              <div class="rx-exp-date">Jan – Nov 2017</div>
+              <div class="rx-exp-card">
+                <h3>UI/UX Designer W/Front-end Dev Consultant</h3>
+                <div class="rx-company">Microsoft Corporation, Redmond, WA</div>
+                <p>
+                  I designed CodeHub, Microsoft's internal platform for
+                  discovering and sharing reusable code and documentation,
+                  used by more than 50,000 employees. I mapped user personas and
+                  journeys and designed reusable UI components for enterprise
+                  workflows, including search, filtering, and pagination.
+                </p>
+                <p>
+                  I created high-fidelity, interactive prototypes using HTML,
+                  CSS, Bootstrap, JavaScript, and jQuery. I collaborated with
+                  the team to refine the experience and deliver usable
+                  enterprise interfaces.
+                </p>
+              </div>
+            </div>
+            <div class="rx-exp-item">
+              <div class="rx-exp-date">Aug 2015 – Dec 2016</div>
+              <div class="rx-exp-card">
+                <h3>UI/UX Designer &amp; Front-End Developer</h3>
+                <div class="rx-company">Seg Technologies, Hyderabad, India (remote)</div>
+                <p>
+                  Worked on client e-commerce and SaaS projects, including
+                  Crower (crower.com), a Magento parts store. Produced sitemaps,
+                  user flows, wireframes, page layouts, and UI specifications
+                  for engineering and QA, and designed product browse,
+                  filtering, comparison, and checkout experiences, along with
+                  SaaS dashboards, data tables, and administrative screens.
+                </p>
+                <p>
+                  Designed and built responsive front ends in HTML5, CSS3,
+                  JavaScript, and jQuery, integrated PayPal checkout, and
+                  contributed to PHP/MySQL back-end work on client sites.
+                </p>
+              </div>
+            </div>
+            <div class="rx-exp-item">
+              <div class="rx-exp-date">Jan 2012 – Jul 2015</div>
+              <div class="rx-exp-card">
+                <h3>Co-Founder / Partner, UI Designer &amp; Front-End Developer</h3>
+                <div class="rx-company">Sanctify Technologies, Hyderabad, India</div>
+                <p>
+                  Co-founded and ran a 2 to 5 person web studio serving clients
+                  in India, the UK, the US, and the Middle East. Ran engagements
+                  end to end across time zones, from requirements discovery,
+                  estimates, and timelines through wireframes, layouts, client
+                  design reviews, delivery, and support.
+                </p>
+                <p>
+                  Designed interfaces in Photoshop and converted approved
+                  designs into complete HTML5, CSS3, JavaScript, and jQuery
+                  front ends on WordPress, Joomla, Drupal, and Magento. Guided
+                  junior designers and developers on UI conventions, reusable
+                  markup patterns, and icon-font workflow.
+                </p>
+              </div>
+            </div>
+            <div class="rx-exp-item">
+              <div class="rx-exp-date">Jan 2008 – Nov 2011</div>
+              <div class="rx-exp-card">
+                <h3>Web Designer / UI Developer</h3>
+                <div class="rx-company">Bluecom Technologies, Hyderabad, India (remote from 2010)</div>
+                <p>
+                  Designed client websites, marketing pages, and brand assets in
+                  Photoshop, Illustrator, and InDesign, and implemented them as
+                  hand-coded HTML and CSS. Ran projects from client brief
+                  through delivery with limited supervision, working remotely
+                  for the final 18 months of the engagement.
+                </p>
               </div>
             </div>
           </div>
-          <div class="card-body px-3 py-2">
-            <p>I developed front-end experiences for IAA's enterprise operations application, supporting complex, data-dense workflows across forms, tables, dashboards, and multi-step processes. Using HTML5, CSS3, JavaScript, and jQuery, I built responsive interfaces and reusable UI components within a shared design system.</p>
-            <p>I modernized legacy ASP.NET .aspx pages into .cshtml using current Bootstrap versions, and collaborated with .NET developers on data binding and UI defects. I applied accessibility practices with WCAG 2.1 AA as a target and supported delivery through Azure DevOps.</p>
+          <div class="rx-section-head mt-5">
+            <div class="rx-kicker">Education</div>
+            <h2 class="rx-section-title">Education</h2>
           </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card mb-3" data-aos="fade-left" data-aos-delay="300">
-          <div class="card-header px-3 py-2">
-            <div class="d-flex justify-content-between">
-              <div>
-                <h3 class="h5 mb-1">UI/UX Developer & Designer Consultant</h3>
-                <div class="text-muted text-small">Microsoft Corporation, Redmond, WA <small>(June – Oct 2018)</small></div>
+          <div class="row g-4">
+            <div class="col-lg-6">
+              <div class="rx-exp-card h-100">
+                <h3>M.S., Information Technology</h3>
+                <div class="rx-company">
+                  University of the Cumberlands, Williamsburg, KY
+                </div>
+                <div class="rx-exp-date">2020</div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="rx-exp-card h-100">
+                <h3>B.Tech., Engineering</h3>
+                <div class="rx-company">
+                  Jawaharlal Nehru Technological University, India
+                </div>
+                <div class="rx-exp-date">2007</div>
               </div>
             </div>
           </div>
-          <div class="card-body px-3 py-2">
-            <p>Labels in Office 365 can help you take the right actions on the right content. With labels, you can classify data across your organization for governance, and enforce retention rules based on that classification. With labels, you can Enable people in your organization to apply a label manually to content in Office 365 group. </p>
-            <p>I actively contributed to the UX process by presenting design strategies and solutions during UX review sessions with senior management, ensuring alignment with business goals and user needs. As part of a user-centered design approach, I conducted weekly usability testing on interactive prototypes to gather real user feedback and iterate quickly. My design work included creating UI sketches, user flows, wireframes, and rapid prototypes for both web and mobile platforms, enabling clear communication of ideas across teams.</p>
-          </div>
         </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card mb-3" data-aos="fade-right" data-aos-delay="200">
-          <div class="card-header px-3 py-2">
-            <div class="d-flex justify-content-between">
-              <div>
-                <h3 class="h5 mb-1">UI/UX Designer Consultant</h3>
-                <div class="text-muted text-small">Delicia, San Antonio, Texas  <small>(Jan – May 2018)</small></div>
+      </section>
+      <!-- Contact Section -->
+      <section class="rx-section rx-contact" id="contact">
+        <div class="container">
+          <div class="rx-section-head">
+            <div class="rx-kicker">Let’s Work Together</div>
+            <h2 class="rx-section-title">Contact Me</h2>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-6">
+              <div class="rx-contact-card">
+                <form
+                  action="https://formspree.io/your@email.com"
+                  method="POST"
+                >
+                  <div class="form-group my-2">
+                    <label for="name" class="form-label fw-bolder">Name</label
+                    ><input
+                      class="form-control"
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group my-2">
+                    <label for="email" class="form-label fw-bolder">Email</label
+                    ><input
+                      class="form-control"
+                      type="email"
+                      id="email"
+                      name="_replyto"
+                      required
+                    />
+                  </div>
+                  <div class="form-group my-2">
+                    <label for="message" class="form-label fw-bolder"
+                      >Message</label
+                    ><textarea
+                      class="form-control"
+                      id="message"
+                      name="message"
+                      rows="4"
+                      required
+                    ></textarea>
+                  </div>
+                  <button
+                    class="rx-btn rx-btn-primary border-0 mt-2"
+                    type="submit"
+                  >
+                    Send <i class="fas fa-arrow-right"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="rx-contact-card h-100">
+                <div class="h5 text-white">Let’s talk how I can help you!</div>
+                <p class="rx-contact-copy">
+                  If you like my work and want to avail my services then drop me
+                  a message using the contact form.
+                </p>
+                <p class="rx-contact-copy">
+                  Or get in touch using my email, or my contact number.
+                </p>
+                <p class="rx-contact-copy">See you!</p>
+                <div class="rx-contact-meta">
+                  <div class="mb-3">
+                    <small class="d-block">Email:</small
+                    ><strong>Rahul.webui@gmail.com</strong>
+                  </div>
+                  <div>
+                    <small class="d-block">Phone:</small
+                    ><strong>331-980-0775</strong>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="card-body px-3 py-2">
-            <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
-            <p>Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="rx-footer pt-5 pb-4 text-center">
+      <div class="container">
+        <div class="my-3">
+          <div class="h4"><strong>Rahul Bheemanathi</strong></div>
+          <p>UI / UX Designer &amp; Developer, Front-end Experienced</p>
+          <div class="social-nav">
+            <a
+              class="nav-link d-inline-block"
+              href="https://www.linkedin.com/in/rahul-bheemanathi-54611b137/"
+              title="LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-linkedin fa-lg"></i
+              ><span class="rx-sr-only">LinkedIn</span></a
+            >
+          </div>
+        </div>
+        <div class="text-small">
+          <div class="mb-1">&copy; Rahul UX. All rights reserved.</div>
+          <div>
+            Design -
+            <a href="#top" class="text-decoration-none text-white"
+              >Rahul Bheemanathi</a
+            >
           </div>
         </div>
       </div>
-      <div class="col-md-6">
-        <div class="card mb-3" data-aos="fade-left" data-aos-delay="400">
-          <div class="card-header px-3 py-2">
-            <div class="d-flex justify-content-between">
-              <div>
-                <h3 class="h5 mb-1">UI/UX Designer W/Front-end Dev Consultant</h3>
-                <div class="text-muted text-small">Microsoft Corporation, Redmond, WA <small>(Jan – Nov 2017)</small></div>
-              </div>
-            </div>
-          </div>
-          <div class="card-body px-3 py-2">
-            <p>I designed CodeHub, Microsoft's internal platform for discovering and sharing reusable code and documentation, used by more than 50,000 employees. I mapped user personas and journeys and designed reusable UI components for enterprise workflows, including search, filtering, and pagination.</p>
-            <p>I created high-fidelity, interactive prototypes using HTML, CSS, Bootstrap, JavaScript, and jQuery. I collaborated with the team to refine the experience and deliver usable enterprise interfaces.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- <div class="section px-3 px-lg-4 pt-5" id="testimonials">
-  <div class="container-narrow">
-    <div class="text-center mb-5">
-      <h2 class="marker marker-center">Client Testimonials</h2>
-    </div>
-    <div class="row"> 
-      <div class="col-md-6 mb-5" data-aos="fade-right" data-aos-delay="100">
-        <div class="d-flex ms-md-3"><span><i class="fas fa-2x fa-quote-left"></i></span><span class="m-2">Walter displays exemplary professionalism and is able to take on challenges. He learns quickly and is an asset to any team.</span></div>
-        <div class="d-flex justify-content-end align-items-end">
-          <div class="text-end me-2">
-            <div class="fw-bolder">Aiyana</div>
-            <div class="text-small">CEO / Web Design Company</div>
-          </div><img class="me-md-3 rounded" src="images/testimonials/client1.jpg" width="96" height="96" alt="client 1"/>
-        </div>
-      </div>
-      <div class="col-md-6 mb-5" data-aos="fade-left" data-aos-delay="300">
-        <div class="d-flex ms-md-3"><span><i class="fas fa-2x fa-quote-left"></i></span><span class="m-2">Walter displays exemplary professionalism and is able to take on challenges. He learns quickly and is an asset to any team.</span></div>
-        <div class="d-flex justify-content-end align-items-end">
-          <div class="text-end me-2">
-            <div class="fw-bolder">Alexander</div>
-            <div class="text-small">CEO / Web Design Company</div>
-          </div><img class="me-md-3 rounded" src="images/testimonials/client2.jpg" width="96" height="96" alt="client 1"/>
-        </div>
-      </div>
-      <div class="col-md-6 mb-5" data-aos="fade-right" data-aos-delay="200">
-        <div class="d-flex ms-md-3"><span><i class="fas fa-2x fa-quote-left"></i></span><span class="m-2">Walter is a great co-worker and problem solver. He is quick to extend his helping hand and makes a good team player.</span></div>
-        <div class="d-flex justify-content-end align-items-end">
-          <div class="text-end me-2">
-            <div class="fw-bolder">Ariya</div>
-            <div class="text-small">Web Developer</div>
-          </div><img class="me-md-3 rounded" src="images/testimonials/client3.jpg" width="96" height="96" alt="client 1"/>
-        </div>
-      </div>
-      <div class="col-md-6 mb-5" data-aos="fade-left" data-aos-delay="400">
-        <div class="d-flex ms-md-3"><span><i class="fas fa-2x fa-quote-left"></i></span><span class="m-2">Walter is a great co-worker and problem solver. He is quick to extend his helping hand and makes a good team player.</span></div>
-        <div class="d-flex justify-content-end align-items-end">
-          <div class="text-end me-2">
-            <div class="fw-bolder">Braiden</div>
-            <div class="text-small">Web Designer</div>
-          </div><img class="me-md-3 rounded" src="images/testimonials/client4.jpg" width="96" height="96" alt="client 1"/>
-        </div>
-      </div>
-    </div>
-  </div>
-</div> -->
-<div class="section px-2 px-lg-4 pb-4 pt-5 mb-5" id="contact">
-  <div class="container-narrow">
-    <div class="text-center mb-5">
-      <h2 class="marker marker-center">Contact Me</h2>
-    </div>
-    <div class="row">
-      <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100">
-        <div class="bg-light my-2 p-3 pt-2"><form action="https://formspree.io/your@email.com"
-    method="POST">
-    <div class="form-group my-2">
-      <label for="name" class="form-label fw-bolder">Name</label>
-      <input class="form-control" type="text" id="name" name="name" required>
-    </div>
-    <div class="form-group my-2">
-      <label for="email" class="form-label fw-bolder">Email</label>
-      <input class="form-control" type="email" id="email" name="_replyto" required>
-    </div>
-  <div class="form-group my-2">
-    <label for="message" class="form-label fw-bolder">Message</label>
-    <textarea class="form-control" style="resize: none;" id="message" name="message" rows="4" required></textarea>
-  </div>
-  <button class="btn btn-primary mt-2" type="submit">Send</button>
-</form>
-        </div>
-      </div>
-      <div class="col-md-6" data-aos="fade-left" data-aos-delay="300">
-        <div class="mt-3 px-1">
-          <div class="h5">Let’s talk how I can help you!</div>
-          <p>If you like my work and want to avail my services then drop me a message using the contact form. </p>
-          <p>Or get in touch using my email, or my contact number.</p>
-          <p>See you!</p>
-        </div>
-        <div class="mt-53 px-1">
-          <div class="row"> 
-            <div class="col-sm-2">
-              <div class="pb-1">Email:</div>
-            </div>
-            <div class="col-sm-10">
-              <div class="pb-1 fw-bolder">info@rahulux.com</div>
-            </div>
-            <!-- <div class="col-sm-2">
-              <div class="pb-1">Skype:</div>
-            </div> -->
-            <!-- <div class="col-sm-10">
-              <div class="pb-1 fw-bolder">username@skype.com</div>
-            </div> -->
-            <div class="col-sm-2">
-              <div class="pb-1">Phone:</div>
-            </div>
-            <div class="col-sm-10">
-              <div class="pb-1 fw-bolder">+1 331-203-2709</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<footer class="pt-4 pb-4 text-center bg-light">
-  <div class="container">
-    <div class="my-3">
-      <div class="h4">Rahul Bheemanathi</div>
-      <p>UI / UX Designer & Developer, Front-end Experienced</p>
-      <div class="social-nav">
-        <nav role="navigation">
-          <ul class="nav justify-content-center">
-            <!-- <li class="nav-item"><a class="nav-link" href="https://twitter.com/templateflip" title="Twitter"><i class="fab fa-twitter"></i><span class="menu-title sr-only">Twitter</span></a></li> -->
-            <!-- <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/templateflip" title="Facebook"><i class="fab fa-facebook"></i><span class="menu-title sr-only">Facebook</span></a></li> -->
-            <!-- <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/templateflip" title="Instagram"><i class="fab fa-instagram"></i><span class="menu-title sr-only">Instagram</span></a></li> -->
-            <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/rahul-bheemanathi-54611b137/" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i><span class="menu-title sr-only">LinkedIn</span></a></li>
-            <!-- <li class="nav-item"><a class="nav-link" href="https://www.behance.net/templateflip" title="Behance"><i class="fab fa-behance"></i><span class="menu-title sr-only">Behance</span></a></li> -->
-          </ul>
-        </nav>
-      </div>
-    </div>
-    <div class="text-small text-secondary">
-      <div class="mb-1">&copy; Rahul UX. All rights reserved.</div>
-      <div>
-        <!-- Make sure to buy a license for the template before removing the line below. Buy license on https://templateflip.com/ -->Design - <a href="#" target="_blank">Rahul Bheemanathi</a></div>
-    </div>
-  </div>
-</footer></div>
-    </div>
-    <div id="scrolltop"><a class="btn btn-secondary" href="#top"><span class="icon"><i class="fas fa-angle-up fa-x"></i></span></a></div>
-    <script src="./scripts/imagesloaded.pkgd.min.js?ver=1.2.0"></script>
-    <script src="./scripts/masonry.pkgd.min.js?ver=1.2.0"></script>
-    <script src="./scripts/BigPicture.min.js?ver=1.2.0"></script>
-    <script src="./scripts/purecounter.min.js?ver=1.2.0"></script>
+    </footer>
+    <a class="rx-top" href="#top" aria-label="Back to top"
+      ><i class="fas fa-angle-up"></i
+    ></a>
     <script src="./scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
-    <script src="./scripts/aos.min.js?ver=1.2.0"></script>
-    <script src="./scripts/main.js?ver=1.2.0"></script>
   </body>
 </html>
